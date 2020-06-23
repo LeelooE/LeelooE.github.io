@@ -1,0 +1,69 @@
+.contact {
+    background: $dusty;
+    background-size: cover;
+    padding: 10rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.contact__box {
+    background: $paper;
+    width: 90rem;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    @media (max-width: $desktop-breakpoint) {
+        width: 100%;
+        margin: 5rem;
+    }
+}
+
+.contact__box-inner {
+    justify-content: center;
+    flex-direction: column;
+    background: $paper;
+    width: 60rem;
+    text-align: center;
+    
+    margin: 5rem 0;
+    > a {
+        margin: 2rem 0;
+    }
+    .portfolio__box-link:hover {
+        text-decoration: none;
+        background: fade-out($dusty, 0.15);
+        cursor: pointer;
+        color: $dark-grey;
+      }
+    @media (max-width: $desktop-breakpoint) {
+        margin: 0rem;
+        width: 100%;
+        padding: 0 $l-size;
+    }
+}
+
+.contact__title {
+    font-family: $l-family;
+    font-size: 5rem;
+    line-height: 1;
+    padding: $s-size 0;
+}
+
+.contact__body {
+    font-family: $r-family;
+    font-size: $font-size-large;
+    margin: $s-size 0;
+    @media (max-width: $desktop-breakpoint) {
+        width: 100%;
+    }
+}
+
+.contact__link {
+    margin: $l-size 0;
+}
+
+.contact-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
